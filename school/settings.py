@@ -39,8 +39,12 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'student',
     'teacher',
-    'class',
+    'classes',
     'course',
+    'rest_framework',
+    'api',
+    'classPeriod',
+    
 ]
 
 MIDDLEWARE = [
@@ -81,8 +85,11 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
+        'USER' : 'myuser',
+       
     }
 }
+
 
 
 # Password validation
