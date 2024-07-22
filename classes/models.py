@@ -3,14 +3,13 @@ from django.db import models
 # Create your models here.
 
 class Class(models.Model):
-    class_id = models.PositiveSmallIntegerField()
     class_name = models.CharField(max_length = 20)
     teacher = models.CharField(max_length = 20)
     room_number = models.PositiveSmallIntegerField()
     class_size = models.PositiveSmallIntegerField()
-    start_time = models.IntegerField()
-    end_time = models.IntegerField()
-    school_year = models.IntegerField()
+    start_time = models.TimeField()
+    end_time = models.TimeField()
+    school_year = models.DateField()
     created_at = models.DateField()
     description = models.TextField()
 

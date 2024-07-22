@@ -11,10 +11,3 @@ class ClassPeriod(models.Model):
 
     def __str__(self):
         return f"{self.course}, {self.classroom}"
-
-
-# Start time
-# End time
-# Course
-# Classroom
-# Day of the week

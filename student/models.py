@@ -10,7 +10,6 @@ class Student(models.Model):
     date_of_birth = models.DateField
     code = models.PositiveSmallIntegerField()
     country = models.CharField(max_length = 28)
-    id_number = models.IntegerField()
     gender = models.CharField(max_length = 6)
     Bio = models.TextField()
 
