@@ -1,4 +1,5 @@
 from django.db import models
+from datetime import date
 
 # Create your models here.
 
@@ -7,7 +8,7 @@ class Student(models.Model):
     first_name = models.CharField(max_length = 20)
     last_name = models.CharField(max_length = 20)
     email = models.EmailField()
-    date_of_birth = models.DateField
+    date_of_birth = models.DateField(("Date"), default=date.today)
     code = models.PositiveSmallIntegerField()
     country = models.CharField(max_length = 28)
     gender = models.CharField(max_length = 6)

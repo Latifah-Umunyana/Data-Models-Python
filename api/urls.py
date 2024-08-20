@@ -11,6 +11,7 @@ from .views import ClassDetailView
 from .views import TeacherDetailView
 from .views import CoursesDetailView
 from .views import ClassPeriodDetailView
+from .views import WeeklyTimetable
 
 
 urlpatterns = [
@@ -23,6 +24,7 @@ path("students/<int:id>/", StudentDetailView.as_view(), name="student_detail_vie
 path("classes/<int:id>/", ClassDetailView.as_view(), name="class_detail_view"),
 path("teachers/<int:id>/", TeacherDetailView.as_view(), name="teacher_detail_view"),
 path("courses/<int:id>/", CoursesDetailView.as_view(), name="course_detail_view"),
-path("class_period/<int:id>/", ClassPeriodDetailView.as_view(), name="class_period_detail_view")
+path("class_period/<int:id>/", ClassPeriodDetailView.as_view(), name="class_period_detail_view"),
+path('Weekly_timetable/', WeeklyTimetable.as_view(), name='weekly_timetable'),
 ]
 
