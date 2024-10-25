@@ -16,3 +16,12 @@ class Student(models.Model):
 
     def __str__(self):
         return f"{self.first_name} {self.last_name}"
+    
+    def full_name(self):
+        return f"{self.first_name}"
+    
+    def age(self):
+        return self.age
+    
+    def get_code(self):
+        return self.code
